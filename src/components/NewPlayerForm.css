@@ -1,0 +1,8 @@
+#new-player-form{ 
+  display: flex;
+  padding-top:20px;
+  flex-direction: center; 
+  max-width: 400px;
+  margin: 0 auto;
+
+} 

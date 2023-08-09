@@ -1,42 +1,170 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+#all-players-container {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	gap: 2% 2%;
+	min-height: 1000px;
+	padding: 25px 0;
+	height: 720px;
+}
+
+/* styling for the form */
+ #new-player-form{ 
+	  display: flex;
+		padding-top:20px;
+	  flex-direction: column; 
+		max-width: 400px;
+    max-height:300px;
+		margin: 0 auto;
+
+	} 
+
+	label {
+		margin-top: 10px;
+		font-weight: bold;
+	}
+	
+	  input[type="text"],
+	  input[type="url"],
+	  input[type="date"] {
+		padding: 8px;
+		margin-top: 5px;
+		width: 100%;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		font-size: 16px;
+		box-sizing: border-box;
+	  }
+
+	   .submit-button {
+			background-color: rgb(82, 82, 177);
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+		  }
+
+			.delete-button {
+			background-color: red;
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+
+	.delete-button:hover {
+		background-color: rgb(255, 200, 0);
+		color:black
+	}
+
+		  .submit-button:hover {
+			background-color: rgb(192, 176, 192);
+			color:black
+		  }
+
+	  .card {
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		padding: 10px;
+		margin: 10px;
+		max-width: 300px;
+		min-width: 200px;
+  
+		min-height: 450px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		background-color: #f9f9f9;
+		transition: box-shadow 0.3s ease;
+	  }  
+	  
+	  .card:hover {
+		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+	  
+		.card img {
+			
+		  width: 100%;
+		 max-height:80%;
+		 height:70%;
+		  border-radius: 5px;
+		}
+	  
+		.card h2 {
+		  margin-top: 0;
+		}
+	  
+		.card p {
+		  margin: 5px 0;
+		}
+
+
+	  #cardContainer {
+		text-align:center
+		}
+		
+		.seeDetails{
+			color: white;
+			padding: 10px 15px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+			background-color: cadetblue;
+		}
+
+		.seeDetails:hover {
+			background-color: rgb(116, 226, 160);
+			color:black
+		}
+
+
+		#radioBox{
+			display: flex;
+			justify-content:space-evenly;
+		}
+
+		#bench{
+			padding-right: 5px;
+		}
+
+		#field{
+			padding-right: 5px;
+		}
+
+    #navbar{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: black;
+      padding-top:50px;
+      
+    }
+    /* This is for the navbar and title */
+
+    #navbar a {
+      text-decoration:none;
+      color:white;
+     
+      font-weight: 600;
+      font-size: 24px;
+
+    }
+#title{
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+#seeDetailsContainer{
+  margin: auto;
+  text-align: center;
+font-weight: 400;
+font-size: 42px;
+font-family: Arial, Helvetica, sans-serif;
+  padding-top: 2em;
 }
