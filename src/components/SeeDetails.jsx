@@ -18,13 +18,13 @@ export default function SeeDetails() {
 	return (
 		<>
 			<div id='seeDetailsContainer'>
-				<p>Name:{singlePlayerInfo.name}</p>
-				<p>Breed:{singlePlayerInfo.breed}</p>
-				<p>Status:{singlePlayerInfo.status}</p>
 				<img
 					src={singlePlayerInfo.imageUrl}
 					alt='picture of a dog waging its tail'
 				/>
+				<p>Name:{singlePlayerInfo.name}</p>
+				<p>Breed:{singlePlayerInfo.breed}</p>
+				<p>Status:{singlePlayerInfo.status}</p>
 			</div>
 		</>
 	);

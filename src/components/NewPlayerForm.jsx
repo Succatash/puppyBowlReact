@@ -53,7 +53,7 @@ const NewPlayerForm = () => {
 						e.target.reset();
 					}, 1),
 						//need to get it to link to players page onSubmit
-						setTimeout(() => navigate('/players', {state: newPlayer}), 500);
+						setTimeout(() => navigate('/', {state: newPlayer}), 500);
 					//reset the form inputs to empty
 				}}
 			>
