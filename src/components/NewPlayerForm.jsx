@@ -49,6 +49,7 @@ const NewPlayerForm = () => {
 							}
 						},
 					});
+
 					setTimeout(() => {
 						e.target.reset();
 					}, 1),

@@ -34,7 +34,7 @@ const Card = ({player}) => {
 			)}
 			<img src={player.imageUrl} alt='image of dog' />
 			<div id='cardContainer'>
-				<h2>{player.name}</h2>	
+				<h2>{player.name}</h2>
 			</div>
 			<div style={{display: 'flex', justifyContent: 'space-evenly'}}>
 				<button

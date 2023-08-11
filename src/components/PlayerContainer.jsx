@@ -14,6 +14,7 @@ const PlayerContainer = ({input}) => {
 				);
 				const player = await response.json();
 				setPlayers(player.data.players);
+
 				setSortedData(
 					player.data.players.filter((el) =>
 						el.name.toLowerCase().includes(input)

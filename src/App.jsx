@@ -1,4 +1,4 @@
-import NewPlayerForm from './components/newPlayerForm';
+import NewPlayerForm from './components/NewPlayerForm';
 import PlayerContainer from './components/PlayerContainer';
 import './App.css';
 import {Routes, Route, Link} from 'react-router-dom';
